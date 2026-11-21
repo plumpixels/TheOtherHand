@@ -1,0 +1,6 @@
+# Real webcam + real microphone.  Install when you leave --sim.
+opencv-python>=4.8,<6       # on-demand webcam vision (ArUco/colour/contour); detectors tested on 5.0.0 headless
+vosk>=0.3.45,<0.4           # offline single-word recognition (needs a model folder, see README)
+sounddevice>=0.4.6,<0.6     # microphone capture for Vosk
+# Object recognition (detector "object"): large install (pulls PyTorch).  AGPL-3.0 licence.
+# ultralytics>=8.3

@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy to config.json and run: python -m laptop_brain --config config.json --serial auto --token SECRET",
+  "server": { "token": "change-me" },
+  "motion": { "speed_scale": 0.4 },
+  "link": { "kind": "serial", "serial_port": "auto", "baud": 115200 },
+  "arm": {
+    "base_height_mm": 60.0, "l1_mm": 120.0, "l2_mm": 120.0, "l3_mm": 90.0,
+    "joint_offsets_deg": [90, 0, 0, 90], "joint_signs": [1, 1, -1, 1],
+    "hover_z_mm": 80, "grip_z_mm": 15, "lift_z_mm": 100,
+    "gripper_open_deg": 25, "gripper_closed_deg": 100
+  },
+  "vision": {
+    "camera_index": 0, "detector": "aruco", "aruco_dict": "DICT_4X4_50",
+    "calib_points": [
+      { "px": [112, 410], "mm": [120,  100] },
+      { "px": [530, 405], "mm": [120, -100] },
+      { "px": [498,  92], "mm": [260, -100] },
+      { "px": [140,  88], "mm": [260,  100] }
+    ]
+  },
+  "voice": { "mode": "ptt", "model_path": "models/vosk-model-small-en-us-0.15", "min_confidence": 0.8 }
+}

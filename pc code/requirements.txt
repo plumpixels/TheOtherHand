@@ -1,0 +1,4 @@
+# Core (enough to run everything with --sim).  Tested on Python 3.13 with the versions noted.
+websockets>=13.0,<18        # asyncio API (websockets.asyncio.*); tested 17.4
+pyserial>=3.5,<4            # ESP8266 over USB serial; tested 3.5
+numpy>=1.26,<3              # homography/kinematics; tested 2.5.3
